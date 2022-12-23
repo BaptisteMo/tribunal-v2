@@ -2893,7 +2893,7 @@ const IndexPage = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Le texte de la page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.StaticImage, {
     alt: "Icon de Fwaz",
     src: "../images/fwaz.jpg",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2537506305.json */ "./.cache/caches/gatsby-plugin-image/2537506305.json")
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/2384002629.json */ "./.cache/caches/gatsby-plugin-image/2384002629.json")
   }));
 };
 
@@ -4523,9 +4523,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/2537506305.json":
+/***/ "./.cache/caches/gatsby-plugin-image/2384002629.json":
 /*!***********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/2537506305.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/2384002629.json ***!
   \***********************************************************/
 /***/ ((module) => {
 

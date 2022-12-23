@@ -2,30 +2,38 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import { excerptStyle } from '../components/layout.module.css'
 
 const BlogPage = ({data}) => {
 
     return(
         <Layout pageTitle="My blog page">
-            <ul>
-                {
-                    data.allFile.nodes.map(node=>(
-                        <li key={node.name}>
-                            {node.name}
-                        </li>
-                        ))
-                }
-            </ul>
+            {
+                data.allMdx.nodes.map((node) => (
+                    <article key={node.id}>
+                        <h2>{node.frontmatter.title}</h2>
+                        <p>Date : {node.frontmatter.date}</p>
+                        <p className={excerptStyle}>{node.excerpt}</p>
+                    </article>
+                )
+
+                )
+            }
         </Layout>
     )
 }
 
 export const query = graphql`
     query {
-        allFile {
+        allMdx(sort: {frontmatter: {date: DESC}}) {
         nodes {
-            name
-        }
+            frontmatter {
+            date(formatString: "D MMMM YYYY")
+            title
+            }
+            id
+            excerpt
+            }
         }
     }
 `

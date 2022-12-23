@@ -2125,11 +2125,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const BlogPage = () => {
+const BlogPage = ({
+  data
+}) => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     pageTitle: "My blog page"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "My super cool blog"));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, data.allFile.nodes.map(node => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    key: node.name
+  }, node.name))));
 };
+const query = "1139867005";
 const Head = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_2__["default"], {
   title: "My blog post"
 });

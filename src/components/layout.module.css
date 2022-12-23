@@ -6,6 +6,14 @@
 .heading {
     color: rebeccapurple;
   }
+  p{
+    margin: 0;
+    color: rgb(130, 130, 130);
+  }
+  H2{
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+  }
   .nav-links {
     display: flex;
     list-style: none;
@@ -22,4 +30,7 @@
     color: gray;
     font-weight: 700;
     margin: 3rem 0;
+  }
+.excerpt-style {
+    margin-top: 5px;
   }

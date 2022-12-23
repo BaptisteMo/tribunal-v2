@@ -1,14 +1,14 @@
 var plugins = [{
       name: 'gatsby-plugin-google-gtag',
-      plugin: require('/Users/baptistemorillon/Documents/git-repo/node_modules/gatsby-plugin-google-gtag/gatsby-ssr.js'),
+      plugin: require('/Users/baptistemorillon/Documents/repo-tribunale/node_modules/gatsby-plugin-google-gtag/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-image',
-      plugin: require('/Users/baptistemorillon/Documents/git-repo/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      plugin: require('/Users/baptistemorillon/Documents/repo-tribunale/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
       name: 'partytown',
-      plugin: require('/Users/baptistemorillon/Documents/git-repo/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('/Users/baptistemorillon/Documents/repo-tribunale/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */
