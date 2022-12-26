@@ -1,22 +1,34 @@
 import * as React from 'react'
 import Layout from '../../components/layout'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Seo from '../../components/seo'
 import { graphql } from 'gatsby'
 
 const BlogPost = ({data, children}) => {
+  const image = getImage(data.mdx.frontmatter.hero_image)
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
+      <GatsbyImage
+      image={image}
+      alt={data.mdx.frontmatter.hero_image_alt}
+      />
       <p>{data.mdx.frontmatter.date}</p>
       {children}
     </Layout>
   )
 }
 export const query = graphql`
-query ($id: String) {
-  mdx(frontmatter: {}, id: {eq: $id}) {
+query($id: String) {
+  mdx(id: {eq: $id}) {
     frontmatter {
       title
-      date(formatString: "D MMMM YYYY")
+      date(formatString: "MMMM DD, YYYY")
+      hero_image_alt
+      hero_image {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
     }
   }
 }`
